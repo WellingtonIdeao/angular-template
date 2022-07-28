@@ -13,5 +13,8 @@ export class ContadorComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  public increment(){
+    this.numero++;
+  }
 
 }
