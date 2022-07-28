@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'template';
+  public exibirConteudo = false;
+
+  public toggleConteudo(){
+    this.exibirConteudo = !this.exibirConteudo;
+  }
 }
