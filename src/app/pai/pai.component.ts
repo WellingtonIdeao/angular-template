@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-pai',
@@ -7,11 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaiComponent implements OnInit {
 
-  public paises = ["Brasil","Estados Unidos", "", "Israel"];
+  public paises = ["Brasil","Estados Unidos", "Japão", "Israel"];
+
+  @Input() votado: string = "";
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  onVoted(votado: string):void{
+    this.votado = votado;
+  }
+
+
 
 }

@@ -1,2 +1,3 @@
 <p>Componente pai</p>
-<app-filho *ngFor="let pais of paises" [pais]="pais"></app-filho>
+<app-filho *ngFor="let pais of paises" [pais]="pais" (voted)="onVoted($event)"></app-filho>
+<p>Você votou em: {{ votado }}</p>

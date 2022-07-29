@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-filho',
@@ -7,7 +7,9 @@ import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/cor
 })
 export class FilhoComponent implements OnInit, OnChanges {
 
-  @Input() pais: string|undefined;
+  @Input() pais: string = "";
+
+  @Output() voted = new EventEmitter<string>();
 
   constructor() { }
 
@@ -18,6 +20,10 @@ export class FilhoComponent implements OnInit, OnChanges {
     for (let change in changes){
       this.pais = (changes[change].currentValue && changes[change].currentValue.trim()) || '<País não informado>';
     }
+  }
+
+  vota(pais: string){
+    this.voted.emit(pais);
   }
 
 }
