@@ -10,6 +10,7 @@ import { FilmeComponent } from './filme/filme.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { ClickMeComponent } from './click-me/click-me.component';
 import { TextBoxComponent } from './text-box/text-box.component';
+import { ComponenteFilhoComponent } from './componente-filho/componente-filho.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TextBoxComponent } from './text-box/text-box.component';
     FilmeComponent,
     ProdutoComponent,
     ClickMeComponent,
-    TextBoxComponent
+    TextBoxComponent,
+    ComponenteFilhoComponent
   ],
   imports: [
     BrowserModule
