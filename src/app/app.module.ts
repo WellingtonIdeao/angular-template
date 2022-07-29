@@ -13,6 +13,7 @@ import { TextBoxComponent } from './text-box/text-box.component';
 import { ComponenteFilhoComponent } from './componente-filho/componente-filho.component';
 import { PaiComponent } from './pai/pai.component';
 import { FilhoComponent } from './filho/filho.component';
+import { TooltipExampleComponent } from './tooltip-example/tooltip-example.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FilhoComponent } from './filho/filho.component';
     TextBoxComponent,
     ComponenteFilhoComponent,
     PaiComponent,
-    FilhoComponent
+    FilhoComponent,
+    TooltipExampleComponent
   ],
   imports: [
     BrowserModule

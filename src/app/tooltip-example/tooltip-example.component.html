@@ -1,0 +1,9 @@
+<p class="term" 
+(mouseover)="showTooltip(); changePositionTooltip($event.x, $event.y)"
+(mouseleave)="hideTooltip()">DOM</p>
+
+<div class="tooltip" [class.visible]="visible"  [style.left.px]="mouse_pos.x" [style.top.px]="mouse_pos.y">
+    <p>The Document Object Model (DOM) connects web pages to scripts or programming languages by representing the structure of a document—such 
+        as the HTML representing a web page—in memory. Usually that means JavaScript, although modelling HTML, SVG, or XML documents as objects
+        is not part of the JavaScript language, as such.</p>
+</div>
