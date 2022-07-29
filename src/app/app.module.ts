@@ -11,6 +11,8 @@ import { ProdutoComponent } from './produto/produto.component';
 import { ClickMeComponent } from './click-me/click-me.component';
 import { TextBoxComponent } from './text-box/text-box.component';
 import { ComponenteFilhoComponent } from './componente-filho/componente-filho.component';
+import { PaiComponent } from './pai/pai.component';
+import { FilhoComponent } from './filho/filho.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ComponenteFilhoComponent } from './componente-filho/componente-filho.co
     ProdutoComponent,
     ClickMeComponent,
     TextBoxComponent,
-    ComponenteFilhoComponent
+    ComponenteFilhoComponent,
+    PaiComponent,
+    FilhoComponent
   ],
   imports: [
     BrowserModule
