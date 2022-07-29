@@ -1,23 +1,23 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-filho',
   templateUrl: './filho.component.html',
   styleUrls: ['./filho.component.css']
 })
-export class FilhoComponent implements OnInit {
+export class FilhoComponent implements OnInit, OnChanges {
 
-  private _name="";
+  @Input() pais: string|undefined;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  @Input()
-  set name(name:string){
-    this._name = ( name && name.trim()) || '<Nome em branco>';
+  ngOnChanges(changes: SimpleChanges):void{
+    for (let change in changes){
+      this.pais = (changes[change].currentValue && changes[change].currentValue.trim()) || '<País não informado>';
+    }
   }
 
-  get name(): string{ return this._name;}
 }
