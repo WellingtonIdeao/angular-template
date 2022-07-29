@@ -11,7 +11,7 @@ export class TextBoxComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  public onKeyPress(event:any){
-    console.log(event.target.value.length);
+  public countCharacters(text: string){
+    console.log(text.length);
   }
 }

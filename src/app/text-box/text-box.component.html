@@ -1,1 +1,1 @@
-<textarea (keypress)="onKeyPress($event)"></textarea>
+<textarea (keypress)="countCharacters($any($event.target).value)"></textarea>
