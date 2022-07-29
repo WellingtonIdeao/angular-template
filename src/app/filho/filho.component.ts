@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 
 @Component({
   selector: 'app-filho',
@@ -11,8 +11,8 @@ export class FilhoComponent implements OnInit, OnChanges {
 
   @Output() voted = new EventEmitter<string>();
 
-  constructor() { }
-
+  public name:string = "Clark Kent";
+  
   ngOnInit(): void {
   }
 
